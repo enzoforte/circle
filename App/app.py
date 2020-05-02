@@ -1,11 +1,13 @@
 from flask import Flask
 import requests
+from Src.Circle import Circle
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "hello world"
+    #circle = Cicle()
+    return "circle"
 
 @app.route('/covid/stats')
 def stats():
