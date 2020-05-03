@@ -1,2 +1,4 @@
-# circle
-Simple experiment hex architecture for Circle
+# Circle
+Simple experiment hex architecture for circle
+
+Install 
