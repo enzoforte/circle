@@ -3,7 +3,7 @@ from App import app
 from Src.Circle.Circle import Circle
 from Src.Circle.Exception import ValueNotValidError
 
-class CircleTest(unittest.TestCase):
+class TestCircle(unittest.TestCase):
  
     def testCreatCircle(self):
         circle : Circle = Circle(0, 0, 11)
