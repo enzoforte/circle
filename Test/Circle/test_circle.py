@@ -2,6 +2,7 @@ import unittest
 from App import app
 from Src.Circle.Circle import Circle
 from Src.Circle.Exception import ValueNotValidError
+import uuid
 
 class TestCircle(unittest.TestCase):
  
@@ -26,3 +27,18 @@ class TestCircle(unittest.TestCase):
             assert False
         except ValueNotValidError:
             assert True
+
+    def testTwoCirclesAreNotEqual (self):
+        circleA : Circle = Circle(1, 0, 0)
+        circleB : Circle = Circle(1, 0, 0)
+        assert circleA != circleB
+    
+    def testCirclIdIsUUID (self):
+        circle : Circle = Circle(1, 0, 0)
+        try:
+            uuid.UUID(str(circle.id))
+            assert True
+        except ValueError:
+            assert False
+
+    
