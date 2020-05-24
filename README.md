@@ -1,4 +1,3 @@
-# Circle
-Simple experiment hex architecture for circle
 
-Install 
+# circle
+simple service in a exagonal architecture
