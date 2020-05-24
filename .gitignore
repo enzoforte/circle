@@ -1,2 +1,4 @@
 .env
 .flaskenv
+.history
+__pycache__
