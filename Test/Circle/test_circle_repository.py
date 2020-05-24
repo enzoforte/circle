@@ -10,9 +10,6 @@ class TestCircleRepository(object):
     
     @pytest.fixture
     def repository(self):
-        # print("\nconfiguring with %s" )
-        # yield
-        # print("\ncleaning up config")
         repo = InMemoryCircleRepository()
         yield repo
         repo._clear()
