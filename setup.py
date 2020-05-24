@@ -8,7 +8,7 @@ setup(
   ],
   packages=find_packages(exclude=['Test']),
   install_requires=[
-    'flask==0.12',
+    'flask==1.0',
     'six==1.10.0',
   ],
 )
