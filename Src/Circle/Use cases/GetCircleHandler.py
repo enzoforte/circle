@@ -1,15 +1,11 @@
 
-import GetCircleCommand 
-from ..Circle.CircleRepository import CircleRepository 
+# class GetCircleHandler:
 
+#     _repository : GetCircleRepository
 
-class GetCircleHandler:
+#     def __init__ (self, repository : CircleRepository):
+#         self.id = id
 
-    _repository : GetCircleRepository
-
-    def __init__ (self, repository : CircleRepository):
-        self.id = id
-
-    def handle (self, command : GetCircleCommand ):
-        id = command.getId()
-        return self.repository.get(id)
+#     def handle (self, command : GetCircleCommand ):
+#         id = command.getId()
+#         return self.repository.get(id)
